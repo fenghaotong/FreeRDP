@@ -1,0 +1,27 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeParseArguments.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/CMakeLists.txt
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/audin/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/cliprdr/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/disp/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/drdynvc/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/drive/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/echo/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/encomsp/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/geometry/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/parallel/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/printer/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/rail/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/rdp2tcp/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/rdpdr/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/rdpei/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/rdpgfx/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/rdpsnd/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/remdesk/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/serial/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/smartcard/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/sshagent/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/tsmf/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/urbdrc/ChannelOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/channels/video/ChannelOptions.cmake

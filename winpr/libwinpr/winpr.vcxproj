@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F70F304F-63CE-3982-B8E5-CD5E5F87C9B6}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>winpr</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">winpr.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">winpr2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">winpr.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">winpr2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">winpr.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">winpr2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">winpr.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">winpr2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;WINPR_EXPORTS;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WINPR_DLL;WINPR_EXPORTS;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;ntdsapi.lib;crypt32.lib;dbghelp.lib;ws2_32.lib;rpcrt4.lib;credui.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/Debug/winpr2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/Debug/winpr2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;WINPR_EXPORTS;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;WINPR_EXPORTS;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;ntdsapi.lib;crypt32.lib;dbghelp.lib;ws2_32.lib;rpcrt4.lib;credui.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/Release/winpr2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/Release/winpr2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;WINPR_EXPORTS;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;WINPR_EXPORTS;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;ntdsapi.lib;crypt32.lib;dbghelp.lib;ws2_32.lib;rpcrt4.lib;credui.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/MinSizeRel/winpr2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/MinSizeRel/winpr2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;WINPR_EXPORTS;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;WINPR_EXPORTS;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\OpenSSL-Win64\lib\libssl.lib;C:\Program Files\OpenSSL-Win64\lib\libcrypto.lib;ntdsapi.lib;crypt32.lib;dbghelp.lib;ws2_32.lib;rpcrt4.lib;credui.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/RelWithDebInfo/winpr2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/RelWithDebInfo/winpr2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\address.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\barrier.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\critical.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\event.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\init.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\mutex.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\semaphore.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\sleep.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\synch.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\timer.c">
+      <ObjectFileName>$(IntDir)/synch/timer.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\synch\wait.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\locale\locale.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\library\library.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\file\generic.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\file\namedPipeClient.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\file\pattern.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\file\file.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pipe\pipe.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pipe\pipe.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\interlocked\interlocked.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\security\security.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\environment\environment.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crypto\hash.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crypto\rand.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crypto\cipher.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crypto\cert.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crypto\crypto.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crypto\crypto.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\registry\registry_reg.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\registry\registry_reg.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\registry\registry.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\credentials\credentials.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\path\path.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\path\shell.c">
+      <ObjectFileName>$(IntDir)/path/shell.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\io\device.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\io\io.c">
+      <ObjectFileName>$(IntDir)/io/io.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\io\io.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\memory\memory.c">
+      <ObjectFileName>$(IntDir)/memory/memory.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\memory\memory.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\input\virtualkey.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\input\scancode.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\input\keycode.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\shell\shell.c">
+      <ObjectFileName>$(IntDir)/shell/shell.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\heap\heap.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\ini.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\sam.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\ntlm.c">
+      <ObjectFileName>$(IntDir)/utils/ntlm.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\image.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\print.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\stream.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\strlst.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\debug.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\winpr.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\cmdline.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\ssl.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\Queue.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\Stack.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\PubSub.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\BipBuffer.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\BitStream.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\Reference.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\ArrayList.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\LinkedList.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\HashTable.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\ListDictionary.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\CountdownEvent.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\BufferPool.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\ObjectPool.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\StreamPool.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\MessageQueue.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\collections\MessagePipe.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng\lodepng.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\lodepng\lodepng.h" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio\strio.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio\trio.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio\trio.h" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio\triodef.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio\trionan.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio\trionan.h" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio\triop.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio\triostr.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\trio\triostr.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\wlog.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\wlog.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\Layout.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\Layout.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\Message.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\Message.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\DataMessage.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\DataMessage.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\ImageMessage.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\ImageMessage.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\PacketMessage.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\PacketMessage.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\Appender.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\Appender.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\FileAppender.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\FileAppender.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\BinaryAppender.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\BinaryAppender.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\CallbackAppender.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\CallbackAppender.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\ConsoleAppender.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\ConsoleAppender.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\UdpAppender.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\utils\wlog\UdpAppender.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\error\error.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\timezone\timezone.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\timezone\TimeZones.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\timezone\WindowsZones.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\timezone\TimeZones.h" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\timezone\WindowsZones.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sysinfo\sysinfo.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pool\synch.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pool\work.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pool\timer.c">
+      <ObjectFileName>$(IntDir)/pool/timer.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pool\io.c">
+      <ObjectFileName>$(IntDir)/pool/io.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pool\cleanup_group.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pool\pool.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pool\pool.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pool\callback.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\pool\callback_cleanup.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\handle\handle.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\handle\handle.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\handle\nonehandle.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\handle\nonehandle.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\thread\argv.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\thread\process.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\thread\processor.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\thread\thread.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\thread\thread.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\thread\tls.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\winsock\winsock.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\CredSSP\credssp.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\CredSSP\credssp.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\NTLM\ntlm_av_pairs.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\NTLM\ntlm_av_pairs.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\NTLM\ntlm_compute.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\NTLM\ntlm_compute.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\NTLM\ntlm_message.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\NTLM\ntlm_message.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\NTLM\ntlm.c">
+      <ObjectFileName>$(IntDir)/sspi/NTLM/ntlm.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\NTLM\ntlm.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\Kerberos\kerberos.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\Kerberos\kerberos.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\Negotiate\negotiate.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\Negotiate\negotiate.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\Schannel\schannel_openssl.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\Schannel\schannel_openssl.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\Schannel\schannel.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\Schannel\schannel.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\sspi_winpr.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\sspi_winpr.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\sspi_export.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\sspi_gss.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\sspi_gss.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\sspi.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspi\sspi.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\winhttp\winhttp.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\asn1\asn1.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\sspicli\sspicli.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crt\alignment.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crt\conversion.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crt\buffer.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crt\memory.c">
+      <ObjectFileName>$(IntDir)/crt/memory.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crt\unicode.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crt\string.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crt\utf.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\crt\utf.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\bcrypt\bcrypt.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\rpc.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_array.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_array.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_context.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_context.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_correlation.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_correlation.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_pointer.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_pointer.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_private.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_private.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_simple.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_simple.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_string.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_string.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_structure.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_structure.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_union.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\ndr_union.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\rpc\midl.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\credui\credui.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\wtsapi\wtsapi.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\wtsapi\wtsapi_win32.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\wtsapi\wtsapi_win32.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\dsparse\dsparse.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\wnd\wnd.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\wnd\wnd.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\smartcard\smartcard.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\smartcard\smartcard.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\smartcard\smartcard_pcsc.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\smartcard\smartcard_pcsc.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\smartcard\smartcard_inspect.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\smartcard\smartcard_inspect.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\smartcard\smartcard_winscard.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\smartcard\smartcard_winscard.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\nt\nt.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\nt\ntstatus.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\clipboard\synthetic.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\clipboard\clipboard.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\libwinpr\clipboard\clipboard.h" />
+    <ResourceCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\libwinpr\version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

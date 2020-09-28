@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.18/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/client/CMakeLists.txt
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/client/FreeRDP-ClientConfig.cmake.in
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/client/Mac/ModuleOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/client/Sample/ModuleOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/client/Windows/ModuleOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/client/X11/ModuleOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/client/freerdp-client.pc.in
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/client/iOS/ModuleOptions.cmake

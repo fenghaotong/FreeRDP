@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\CMakeFiles\7df7f1ce930709725055ae4c18f0ec03\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{1DB51A4B-379D-3A8B-B5FD-5255F8DB64B5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

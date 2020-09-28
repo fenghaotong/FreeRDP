@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{47B0B101-7D02-37EF-89B4-A2F6DDBAE8AA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>freerdp-client</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">freerdp-client.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">freerdp-client2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">freerdp-client.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">freerdp-client2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">freerdp-client.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">freerdp-client2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">freerdp-client.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">freerdp-client2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;WINPR_EXPORTS;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";freerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WINPR_DLL;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;WINPR_EXPORTS;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";freerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Debug\drdynvc-client.lib;..\..\Debug\remdesk-client.lib;..\..\Debug\rdpsnd-client.lib;..\..\Debug\rdpdr-client.lib;..\..\Debug\rdp2tcp-client.lib;..\..\Debug\rail-client.lib;..\..\Debug\encomsp-client.lib;..\..\Debug\cliprdr-client.lib;..\..\Debug\video-client.lib;..\..\Debug\urbdrc-client.lib;..\..\Debug\rdpgfx-client.lib;..\..\Debug\rdpei-client.lib;..\..\Debug\geometry-client.lib;..\..\Debug\echo-client.lib;..\..\Debug\disp-client.lib;..\..\Debug\audin-client.lib;..\..\Debug\smartcard-client.lib;..\..\Debug\printer-client.lib;..\..\Debug\drive-client.lib;..\..\Debug\urbdrc-client-libusb.lib;..\..\Debug\rdpsnd-client-winmm.lib;..\..\Debug\rdpsnd-client-fake.lib;..\..\Debug\printer-client-win.lib;..\..\Debug\audin-client-winmm.lib;..\..\libusb-1.0.23\MS64\dll\libusb-1.0.lib;..\..\Debug\freerdp2.lib;..\..\Debug\winpr2.lib;ntdsapi.lib;crypt32.lib;dbghelp.lib;ws2_32.lib;rpcrt4.lib;credui.lib;shlwapi.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/Debug/freerdp-client2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/Debug/freerdp-client2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;WINPR_EXPORTS;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";freerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;WINPR_EXPORTS;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";freerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Release\drdynvc-client.lib;..\..\Release\remdesk-client.lib;..\..\Release\rdpsnd-client.lib;..\..\Release\rdpdr-client.lib;..\..\Release\rdp2tcp-client.lib;..\..\Release\rail-client.lib;..\..\Release\encomsp-client.lib;..\..\Release\cliprdr-client.lib;..\..\Release\video-client.lib;..\..\Release\urbdrc-client.lib;..\..\Release\rdpgfx-client.lib;..\..\Release\rdpei-client.lib;..\..\Release\geometry-client.lib;..\..\Release\echo-client.lib;..\..\Release\disp-client.lib;..\..\Release\audin-client.lib;..\..\Release\smartcard-client.lib;..\..\Release\printer-client.lib;..\..\Release\drive-client.lib;..\..\Release\urbdrc-client-libusb.lib;..\..\Release\rdpsnd-client-winmm.lib;..\..\Release\rdpsnd-client-fake.lib;..\..\Release\printer-client-win.lib;..\..\Release\audin-client-winmm.lib;..\..\libusb-1.0.23\MS64\dll\libusb-1.0.lib;..\..\Release\freerdp2.lib;..\..\Release\winpr2.lib;ntdsapi.lib;crypt32.lib;dbghelp.lib;ws2_32.lib;rpcrt4.lib;credui.lib;shlwapi.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/Release/freerdp-client2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/Release/freerdp-client2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;WINPR_EXPORTS;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";freerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;WINPR_EXPORTS;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";freerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\MinSizeRel\drdynvc-client.lib;..\..\MinSizeRel\remdesk-client.lib;..\..\MinSizeRel\rdpsnd-client.lib;..\..\MinSizeRel\rdpdr-client.lib;..\..\MinSizeRel\rdp2tcp-client.lib;..\..\MinSizeRel\rail-client.lib;..\..\MinSizeRel\encomsp-client.lib;..\..\MinSizeRel\cliprdr-client.lib;..\..\MinSizeRel\video-client.lib;..\..\MinSizeRel\urbdrc-client.lib;..\..\MinSizeRel\rdpsnd-client.lib;..\..\MinSizeRel\rdpgfx-client.lib;..\..\MinSizeRel\rdpei-client.lib;..\..\MinSizeRel\geometry-client.lib;..\..\MinSizeRel\echo-client.lib;..\..\MinSizeRel\disp-client.lib;..\..\MinSizeRel\audin-client.lib;..\..\MinSizeRel\smartcard-client.lib;..\..\MinSizeRel\printer-client.lib;..\..\MinSizeRel\drive-client.lib;..\..\MinSizeRel\urbdrc-client-libusb.lib;..\..\MinSizeRel\rdpsnd-client-winmm.lib;..\..\MinSizeRel\rdpsnd-client-fake.lib;..\..\MinSizeRel\printer-client-win.lib;..\..\MinSizeRel\audin-client-winmm.lib;..\..\MinSizeRel\urbdrc-client.lib;..\..\libusb-1.0.23\MS64\dll\libusb-1.0.dll;..\..\MinSizeRel\freerdp2.lib;..\..\MinSizeRel\winpr2.lib;ntdsapi.lib;crypt32.lib;dbghelp.lib;ws2_32.lib;rpcrt4.lib;credui.lib;shlwapi.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/MinSizeRel/freerdp-client2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/MinSizeRel/freerdp-client2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;WINPR_EXPORTS;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";freerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINPR_DLL;NDEBUG;_AMD64_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;_WINSOCK_DEPRECATED_NO_WARNINGS;WINVER=0x0601;_WIN32_WINNT=0x0601;WINPR_EXPORTS;FREERDP_EXPORTS;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";freerdp_client_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\OpenSSL-Win64\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\rdtk\include;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client;C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\RelWithDebInfo\drdynvc-client.lib;..\..\RelWithDebInfo\remdesk-client.lib;..\..\RelWithDebInfo\rdpsnd-client.lib;..\..\RelWithDebInfo\rdpdr-client.lib;..\..\RelWithDebInfo\rdp2tcp-client.lib;..\..\RelWithDebInfo\rail-client.lib;..\..\RelWithDebInfo\encomsp-client.lib;..\..\RelWithDebInfo\cliprdr-client.lib;..\..\RelWithDebInfo\video-client.lib;..\..\RelWithDebInfo\urbdrc-client.lib;..\..\RelWithDebInfo\rdpsnd-client.lib;..\..\RelWithDebInfo\rdpgfx-client.lib;..\..\RelWithDebInfo\rdpei-client.lib;..\..\RelWithDebInfo\geometry-client.lib;..\..\RelWithDebInfo\echo-client.lib;..\..\RelWithDebInfo\disp-client.lib;..\..\RelWithDebInfo\audin-client.lib;..\..\RelWithDebInfo\smartcard-client.lib;..\..\RelWithDebInfo\printer-client.lib;..\..\RelWithDebInfo\drive-client.lib;..\..\RelWithDebInfo\urbdrc-client-libusb.lib;..\..\RelWithDebInfo\rdpsnd-client-winmm.lib;..\..\RelWithDebInfo\rdpsnd-client-fake.lib;..\..\RelWithDebInfo\printer-client-win.lib;..\..\RelWithDebInfo\audin-client-winmm.lib;..\..\RelWithDebInfo\urbdrc-client.lib;..\..\libusb-1.0.23\MS64\dll\libusb-1.0.dll;..\..\RelWithDebInfo\freerdp2.lib;..\..\RelWithDebInfo\winpr2.lib;ntdsapi.lib;crypt32.lib;dbghelp.lib;ws2_32.lib;rpcrt4.lib;credui.lib;shlwapi.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/RelWithDebInfo/freerdp-client2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/FreeRDP/RelWithDebInfo/freerdp-client2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\client\common\client.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\client\common\cmdline.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\client\common\compatibility.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\client\common\compatibility.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\client\common\file.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\client\common\geometry.c" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\client\tables.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client\tables.h" />
+    <ClCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client\addin.c" />
+    <ClInclude Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\freerdp-2.2.0\channels\client\addin.h" />
+    <ResourceCompile Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\client\common\version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\audin\client\audin-client.vcxproj">
+      <Project>{6F45CE54-4755-347E-AFF8-CEBC11AA821B}</Project>
+      <Name>audin-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\audin\client\winmm\audin-client-winmm.vcxproj">
+      <Project>{B1E79808-F065-32D4-8C7B-4ACE910D60F8}</Project>
+      <Name>audin-client-winmm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\cliprdr\client\cliprdr-client.vcxproj">
+      <Project>{19FC4094-EC94-3D33-8D04-31BED3CAC9AC}</Project>
+      <Name>cliprdr-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\disp\client\disp-client.vcxproj">
+      <Project>{5A08BA06-C148-3DD7-9C2C-924852711792}</Project>
+      <Name>disp-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\drdynvc\client\drdynvc-client.vcxproj">
+      <Project>{3C3FB7ED-0241-30E2-BF2C-0F7997EC9349}</Project>
+      <Name>drdynvc-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\drive\client\drive-client.vcxproj">
+      <Project>{AC4C79FE-405B-3FF0-852A-291A53A4FACE}</Project>
+      <Name>drive-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\echo\client\echo-client.vcxproj">
+      <Project>{A050DD79-B076-3908-9DA4-60C8CF0BCCC7}</Project>
+      <Name>echo-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\encomsp\client\encomsp-client.vcxproj">
+      <Project>{4F93FD58-375D-39F4-88BC-471363FFBBE3}</Project>
+      <Name>encomsp-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\libfreerdp\freerdp.vcxproj">
+      <Project>{168534B3-F2B1-384D-B283-93E1626EC15F}</Project>
+      <Name>freerdp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\geometry\client\geometry-client.vcxproj">
+      <Project>{979D113F-6722-3923-93EA-9F4D3650B41B}</Project>
+      <Name>geometry-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\printer\client\printer-client.vcxproj">
+      <Project>{934A3E1F-FFBC-3514-890E-0857EC197316}</Project>
+      <Name>printer-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\printer\client\win\printer-client-win.vcxproj">
+      <Project>{FB93D594-FC4F-3492-9580-2BDE95C1A4AC}</Project>
+      <Name>printer-client-win</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\rail\client\rail-client.vcxproj">
+      <Project>{46E045DA-80D3-348A-BEA5-F351940E373C}</Project>
+      <Name>rail-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\rdp2tcp\client\rdp2tcp-client.vcxproj">
+      <Project>{ACB21497-0E55-3FB1-A976-E63A81E84A7C}</Project>
+      <Name>rdp2tcp-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\rdpdr\client\rdpdr-client.vcxproj">
+      <Project>{2E7525DC-2340-3C71-828E-1A775D5551BD}</Project>
+      <Name>rdpdr-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\rdpei\client\rdpei-client.vcxproj">
+      <Project>{9A336B84-4289-39CE-ACF7-FD59346F6736}</Project>
+      <Name>rdpei-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\rdpgfx\client\rdpgfx-client.vcxproj">
+      <Project>{75CC1B82-1BE0-3349-B522-A45F7BA3BDA6}</Project>
+      <Name>rdpgfx-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\rdpsnd\client\rdpsnd-client.vcxproj">
+      <Project>{CFFCC4D6-D873-3606-BA55-7D2CC1B87B05}</Project>
+      <Name>rdpsnd-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\rdpsnd\client\fake\rdpsnd-client-fake.vcxproj">
+      <Project>{65AB6E2C-55AD-39F8-91CF-E1ACA0DAD46D}</Project>
+      <Name>rdpsnd-client-fake</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\rdpsnd\client\winmm\rdpsnd-client-winmm.vcxproj">
+      <Project>{D0F21922-6759-3D59-A01A-21B8F0BEA4D8}</Project>
+      <Name>rdpsnd-client-winmm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\remdesk\client\remdesk-client.vcxproj">
+      <Project>{8CBC925A-F560-3995-B4FE-6BB090BD1F6F}</Project>
+      <Name>remdesk-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\smartcard\client\smartcard-client.vcxproj">
+      <Project>{4B1467DC-6AD8-3E8A-90A3-3A1C245ECC7E}</Project>
+      <Name>smartcard-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\urbdrc\client\urbdrc-client.vcxproj">
+      <Project>{E00F3FA2-53FE-32C6-9367-6EC775F30244}</Project>
+      <Name>urbdrc-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\urbdrc\client\libusb\urbdrc-client-libusb.vcxproj">
+      <Project>{D6B4BC1B-5E14-3C4D-A97C-ABEDC8A60838}</Project>
+      <Name>urbdrc-client-libusb</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\channels\video\client\video-client.vcxproj">
+      <Project>{78EE17DE-F8EB-366C-B9B5-2678AD9EA847}</Project>
+      <Name>video-client</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\guoca\Desktop\RPARemoteDesktop\RDP\FreeRDP\winpr\libwinpr\winpr.vcxproj">
+      <Project>{F70F304F-63CE-3982-B8E5-CD5E5F87C9B6}</Project>
+      <Name>winpr</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

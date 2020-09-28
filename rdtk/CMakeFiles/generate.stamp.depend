@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/cmake/CheckCmakeCompat.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/cmake/ConfigOptions.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/cmake/FindFeature.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/cmake/GNUInstallDirsWrapper.cmake
+C:/Users/guoca/Desktop/RPARemoteDesktop/RDP/freerdp-2.2.0/rdtk/CMakeLists.txt
