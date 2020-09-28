@@ -12,7 +12,7 @@
 
 - 在`属性`->`链接器`->`输入`->`附加的依赖项`中增加`..\..\Debug\libusb-1.0.lib`
 
-  ![Screen Shot 2020-09-28 at 5.42.43 PM.png](https://i.loli.net/2020/09/28/pFmBaqONWHbDXdK.png)
+  ![Screen Shot 2020-09-28 at 5.42.43 PM.png](image/Screen Shot 2020-09-28 at 5.42.43 PM.png)
 
 编译完成后执行：`wfreerdp.exe /u:admin /p:123456 /w:1366 /h:768 /v:127.0.0.1:3389 /f`
 **命令行参数说明:**
@@ -61,20 +61,20 @@
 
 ​	上面的是源码目录，下面的是生成的工程目录。
 
-![Screen Shot 2020-09-28 at 5.19.16 PM.png](https://i.loli.net/2020/09/28/h2oq57FkYPx9R1u.png)
+![Screen Shot 2020-09-28 at 5.19.16 PM.png](image/Screen Shot 2020-09-28 at 5.19.16 PM.png)
 
-![Screen Shot 2020-09-28 at 5.19.28 PM.png](https://i.loli.net/2020/09/28/cUTNAf6diEO4gIs.png)
+![Screen Shot 2020-09-28 at 5.19.28 PM.png](image/Screen Shot 2020-09-28 at 5.19.28 PM.png)
 
 - 点击`configure`，发现libusb路径没有配置。
-  ![Screen Shot 2020-09-28 at 5.28.41 PM.png](https://i.loli.net/2020/09/28/4Q7lsdPRw9qFM38.png)
+  ![Screen Shot 2020-09-28 at 5.28.41 PM.png](image/Screen Shot 2020-09-28 at 5.28.41 PM.png)
 
 - 配置`libusb`路径
 
-  ![Screen Shot 2020-09-28 at 5.28.41 PM.png](https://i.loli.net/2020/09/28/4Q7lsdPRw9qFM38.png)
+  ![Screen Shot 2020-09-28 at 5.28.41 PM.png](image/Screen Shot 2020-09-28 at 5.30.30 PM.png)
 
 #### 2、点击`Generate`生成解决方案，之后就可以用vs2019打开生成的工程
 
-​	![Screen Shot 2020-09-28 at 5.34.08 PM.png](https://i.loli.net/2020/09/28/vkHNrgA6JldL49P.png)
+​	![Screen Shot 2020-09-28 at 5.34.08 PM.png](image/Screen Shot 2020-09-28 at 5.34.08 PM.png)
 
 
 
